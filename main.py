@@ -3,8 +3,8 @@ from customer import Customer
 from account import Account
 from savings_account import SavingsAccount
 
-# create a new bank object
-bank = Bank('A Bank')
+# Create a new bank object
+bank = Bank('My Bank')
 
 # Create a new customer object
 customer = Customer(1, 'John')
@@ -13,15 +13,15 @@ customer = Customer(1, 'John')
 bank.add_customer(customer)
 
 # Create a new savings account object
-savings_account = SavingsAccount(1000)
+savings_account = SavingsAccount(1001)
 
-# Add the saving account to the customer
+# Add the savings account to the customer
 customer.add_account(savings_account)
 
 # Deposit some money into the savings account
-savings_account.deposit(999)
+savings_account.deposit(1000)
 
-# Add interest to the saving account
+# Add interest to the savings account
 savings_account.add_interest()
 
 # Get the savings account balance
